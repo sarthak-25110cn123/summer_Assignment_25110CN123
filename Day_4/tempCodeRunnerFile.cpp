@@ -1,24 +1,31 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-int main() {
-    int n,count=0,num,num2,ld,rem=0;
-    cout<<"Enter a number: ";
-    cin>>n;
-    num=n;
-    num2=n;
-    while(n>0){
-        n=n/10;
-        count++;
-    }
-    while(num!=0){
-        ld=num%10;
+int main(){
+    int start,end;
+    cout<<"Enter starting number: ";
+    cin>>start;
+    cout<<"Enter a ending number: ";
+    cin>>end;
+    for(int i=start;i<=end;i++){
+        int num=i;
+        int num2=i;
+        int num3=num2;
+        int count=0;
+        int rem=0,ld;
+        while(num!=0){
+            num=num/10;
+            count++;
+        }
+        while(num2!=0){
+        ld=num2%10;
         rem=rem+(int)pow(ld,count);
-        num=num/10;
+        num2=num2/10;
+        }
+        if(num3==rem){
+        cout<<num3<<" ";
     }
-    if(num2==rem){
-        cout<<num2<<" is an Armstrong Number";
-    }
-    else cout<<num2<<" is not an Armstrong Number";
+    
+}
     return 0;
 }
