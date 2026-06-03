@@ -4,7 +4,10 @@ int main() {
     int n,prime=0;
     cout<<"Enter a number: ";
     cin>>n;
-
+    if(n < 2) {
+        cout << "It is not Prime";
+        return 0;
+    }
     for(int i=1;i<=n;i++){
         if(n%i==0){
             prime++;
