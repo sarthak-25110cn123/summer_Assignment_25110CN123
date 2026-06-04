@@ -5,6 +5,10 @@ int main() {
     int n,count=0,num,num2,ld,rem=0;
     cout<<"Enter a number: ";
     cin>>n;
+    if(n<0){
+        cout<<"Enter a positive number";
+        return 0;    }
+    if(n==0) count=1;
     num=n;
     num2=n;
     while(n>0){

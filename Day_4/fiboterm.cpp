@@ -4,6 +4,10 @@ int main() {
     int n,a=0,b=1,c;
     cout<<"Enter the nth term : ";
     cin>>n;
+    if(n<=0){
+        cout << "Enter a positive term number";
+        return 0;
+    }
     if(n==1){
         cout<<"nth Fibonacci term: "<<a;
     }
@@ -18,6 +22,5 @@ int main() {
     }
     cout<<"nth Fibonacci term: "<<b;
 }
-    
     return 0;
 }
