@@ -20,6 +20,5 @@ else {
     ans=1/ans;
 }
     cout<<"Answer is: "<<ans;
-    
     return 0;
 }

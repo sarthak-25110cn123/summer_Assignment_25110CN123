@@ -5,9 +5,9 @@ int main() {
     int n,ld;
     cout<<"enter a binary number: ";
     cin >> n;
-    int ans  = 0;
-    int i = 0;
-    while(n != 0 ) {
+    int ans=0;
+    int i=0;
+    while(n!=0){
         ld=n%10;
         ans=(ld*pow(2,i))+ans;
         n=n/10;
