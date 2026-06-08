@@ -7,7 +7,7 @@ int main() {
     if(n<0){
         cout<<"Enter a positive number !";
     }
-    else if(n<0||n>26){
+    else if(n>26){
         cout<<"Enter a number between 0 and 26";
     }
     else{
