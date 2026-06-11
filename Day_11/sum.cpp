@@ -11,6 +11,5 @@ int main(){
     cout << "Enter one number: ";
     cin >> m;
     cout<<"Sum :"<<sum(n,m);
-    
     return 0;
 }
