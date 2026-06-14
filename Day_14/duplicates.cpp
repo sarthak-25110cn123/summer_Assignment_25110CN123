@@ -13,15 +13,14 @@ int main(){
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             if(arr[i]==arr[j]){
-                cout<<arr[i]<<" ";
-              flag=true;
-             break;                
+                cout<<arr[i]<<"  ";
+             flag=true;                
             }
         }
     }
     if(flag==0){
         cout<<"There are no duplicates";
     }
-    else cout<<"are  duplicates";
+    else cout<<" are  duplicates";
     return 0;
 } 
